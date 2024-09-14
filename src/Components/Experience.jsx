@@ -18,7 +18,7 @@ const Experience = () => {
     
         <Stage 
         environment={"city"} 
-        intensity={0.5} 
+        intensity={0.4} 
         contactShadow={true}
         adjustCamera={true}
         >
@@ -29,16 +29,16 @@ const Experience = () => {
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0,-2, 0]}>
              <planeGeometry args={[170,170]} />
              <MeshReflectorMaterial
-                blur = {[300, 300]}
+                blur = {[250, 250]}
                 resolution = {[2048]}
                 mixBlur={1}
-                mixStrength={30}
+                mixStrength={40}
                 roughness={1}
-                depthScale={1.2}
-                minDepthThreshold={0.4}
-                maxDepthThreshold={1.4}
-                color="#101010"
-                metalness={0.7}
+                depthScale={1.3}
+                minDepthThreshold={0.2}
+                maxDepthThreshold={1.3}
+                color="#11021c"
+                metalness={0.5}
              />   
         </mesh>
 
